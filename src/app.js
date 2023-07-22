@@ -17,6 +17,6 @@ app.use("/api", categoryRouter);
 app.use("/api", authRouter);
 
 
-mongoose.connect("mongodb+srv://hieuhop2003:hieuhop123@product.384kcvq.mongodb.net/?retryWrites=true&w=majority");
+mongoose.connect(process.env.API_DB);
 
 export const viteNodeApp = app;
